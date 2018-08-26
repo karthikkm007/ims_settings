@@ -28,7 +28,7 @@
 
 .field private mDeflectNum:Landroid/preference/EditTextPreference;
 
-.field private mImsConfig:Lcom/android/ims/ImsConfig;
+.field private mImsConfig:Landroid/telephony/ims/ImsConfig;
 
 .field private mPcPreference:Landroid/preference/Preference;
 
@@ -480,20 +480,20 @@
     .line 292
     .local v1, "videoQuality":I
     :try_start_0
-    iget-object v2, p0, Lcom/qualcomm/qti/ims/ImsSettings;->mImsConfig:Lcom/android/ims/ImsConfig;
+    iget-object v2, p0, Lcom/qualcomm/qti/ims/ImsSettings;->mImsConfig:Landroid/telephony/ims/ImsConfig;
 
     if-eqz v2, :cond_0
 
     .line 293
-    iget-object v2, p0, Lcom/qualcomm/qti/ims/ImsSettings;->mImsConfig:Lcom/android/ims/ImsConfig;
+    iget-object v2, p0, Lcom/qualcomm/qti/ims/ImsSettings;->mImsConfig:Landroid/telephony/ims/ImsConfig;
 
     .line 294
     const/16 v3, 0x37
 
     .line 293
-    invoke-virtual {v2, v3}, Lcom/android/ims/ImsConfig;->getProvisionedValue(I)I
+    invoke-virtual {v2, v3}, Landroid/telephony/ims/ImsConfig;->getProvisionedValue(I)I
     :try_end_0
-    .catch Lcom/android/ims/ImsException; {:try_start_0 .. :try_end_0} :catch_0
+    .catch Landroid/telephony/ims/ImsException; {:try_start_0 .. :try_end_0} :catch_0
 
     move-result v1
 
@@ -510,7 +510,7 @@
     move-exception v0
 
     .line 297
-    .local v0, "e":Lcom/android/ims/ImsException;
+    .local v0, "e":Landroid/telephony/ims/ImsException;
     sget-object v2, Lcom/qualcomm/qti/ims/ImsSettings;->TAG:Ljava/lang/String;
 
     new-instance v3, Ljava/lang/StringBuilder;
@@ -850,18 +850,18 @@
     .line 305
     .local v1, "result":I
     :try_start_0
-    iget-object v2, p0, Lcom/qualcomm/qti/ims/ImsSettings;->mImsConfig:Lcom/android/ims/ImsConfig;
+    iget-object v2, p0, Lcom/qualcomm/qti/ims/ImsSettings;->mImsConfig:Landroid/telephony/ims/ImsConfig;
 
     if-eqz v2, :cond_0
 
     .line 306
-    iget-object v2, p0, Lcom/qualcomm/qti/ims/ImsSettings;->mImsConfig:Lcom/android/ims/ImsConfig;
+    iget-object v2, p0, Lcom/qualcomm/qti/ims/ImsSettings;->mImsConfig:Landroid/telephony/ims/ImsConfig;
 
     const/16 v3, 0x37
 
-    invoke-virtual {v2, v3, p1}, Lcom/android/ims/ImsConfig;->setProvisionedValue(II)I
+    invoke-virtual {v2, v3, p1}, Landroid/telephony/ims/ImsConfig;->setProvisionedValue(II)I
     :try_end_0
-    .catch Lcom/android/ims/ImsException; {:try_start_0 .. :try_end_0} :catch_0
+    .catch Landroid/telephony/ims/ImsException; {:try_start_0 .. :try_end_0} :catch_0
 
     move-result v1
 
@@ -907,7 +907,7 @@
     move-exception v0
 
     .line 310
-    .local v0, "e":Lcom/android/ims/ImsException;
+    .local v0, "e":Landroid/telephony/ims/ImsException;
     sget-object v2, Lcom/qualcomm/qti/ims/ImsSettings;->TAG:Ljava/lang/String;
 
     new-instance v3, Ljava/lang/StringBuilder;
@@ -933,7 +933,7 @@
     goto :goto_0
 
     .line 313
-    .end local v0    # "e":Lcom/android/ims/ImsException;
+    .end local v0    # "e":Landroid/telephony/ims/ImsException;
     :cond_1
     const/4 v2, 0x1
 
@@ -1154,22 +1154,22 @@
 
     move-result-object v3
 
-    invoke-static {v3, v2}, Lcom/android/ims/ImsManager;->getInstance(Landroid/content/Context;I)Lcom/android/ims/ImsManager;
+    invoke-static {v3, v2}, Landroid/telephony/ims/ImsManager;->getInstance(Landroid/content/Context;I)Landroid/telephony/ims/ImsManager;
 
     move-result-object v1
 
     .line 105
-    .local v1, "imsManager":Lcom/android/ims/ImsManager;
-    invoke-virtual {v1}, Lcom/android/ims/ImsManager;->getConfigInterface()Lcom/android/ims/ImsConfig;
+    .local v1, "imsManager":Landroid/telephony/ims/ImsManager;
+    invoke-virtual {v1}, Landroid/telephony/ims/ImsManager;->getConfigInterface()Landroid/telephony/ims/ImsConfig;
 
     move-result-object v3
 
-    iput-object v3, p0, Lcom/qualcomm/qti/ims/ImsSettings;->mImsConfig:Lcom/android/ims/ImsConfig;
+    iput-object v3, p0, Lcom/qualcomm/qti/ims/ImsSettings;->mImsConfig:Landroid/telephony/ims/ImsConfig;
     :try_end_0
-    .catch Lcom/android/ims/ImsException; {:try_start_0 .. :try_end_0} :catch_0
+    .catch Landroid/telephony/ims/ImsException; {:try_start_0 .. :try_end_0} :catch_0
 
     .line 111
-    .end local v1    # "imsManager":Lcom/android/ims/ImsManager;
+    .end local v1    # "imsManager":Landroid/telephony/ims/ImsManager;
     .end local v2    # "subId":I
     :goto_0
     iget-object v3, p0, Lcom/qualcomm/qti/ims/ImsSettings;->mScreen:Landroid/preference/PreferenceScreen;
@@ -1212,8 +1212,8 @@
     move-exception v0
 
     .line 107
-    .local v0, "e":Lcom/android/ims/ImsException;
-    iput-object v6, p0, Lcom/qualcomm/qti/ims/ImsSettings;->mImsConfig:Lcom/android/ims/ImsConfig;
+    .local v0, "e":Landroid/telephony/ims/ImsException;
+    iput-object v6, p0, Lcom/qualcomm/qti/ims/ImsSettings;->mImsConfig:Landroid/telephony/ims/ImsConfig;
 
     .line 108
     sget-object v3, Lcom/qualcomm/qti/ims/ImsSettings;->TAG:Ljava/lang/String;

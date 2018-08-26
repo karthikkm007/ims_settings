@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="ims_settings">[ÎḾŠ Šéţţîñĝš one two]</string>
+    <string name="ims_vt_call_quality_title">[νŢ Çåļļ qûåļîţý one two three]</string>
+    <string name="ims_vt_call_quality_low">[Ļöŵ one]</string>
+    <string name="ims_vt_call_quality_high">[Ĥîĝĥ one]</string>
+    <string name="ims_vt_call_quality_unknown">[Ûñķñöŵñ one two]</string>
+    <string name="ims_vt_call_quality_set_failed">[Fåîļéð ţö šéţ Vîðéö Qûåļîţý one two three four]</string>
+    <string name="ims_get_packet_count_failed">[Fåîļéð ţö ĝéţ þåçķéţ çöûñţ one two three four]</string>
+    <string name="ims_get_packet_error_count_failed">[Fåîļéð ţö ĝéţ þåçķéţ éŕŕöŕ çöûñţ one two three four]</string>
+    <string name="ims_get_packet_count_label">[çļîçķ ĥéŕé ţö ĝéţ þåçķéţ çöûñţ one two three four]</string>
+    <string name="ims_get_packet_error_count_label">[çļîçķ ĥéŕé ţö ĝéţ þåçķéţ éŕŕöŕ çöûñţ one two three four five]</string>
+    <string name="qti_ims_call_deflect_title">[Çåļļ Ðéƒļéçţ ñûḿɓéŕ one two three]</string>
+    <string name="qti_ims_number_not_set">[Ñöţ šéţ one two]</string>
+    <string name="ims_to_cs_retry_title">[ÇŠ Ŕéţŕý one two]</string>
+    <string name="ims_to_cs_retry_summary">[Åûţö Ŕéţŕý ŵîţĥ ŕéĝûļåŕ Vöîçé çöḿḿûñîçåţîöñš (Ŕéçöḿḿéñðéð) one two three four five six seven]</string>
+</resources>

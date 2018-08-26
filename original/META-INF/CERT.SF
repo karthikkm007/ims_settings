@@ -1,0 +1,17 @@
+Signature-Version: 1.0
+X-Android-APK-Signed: 2
+SHA1-Digest-Manifest: UiWHmkda2to00PYHJ/HnVgcSbQM=
+Created-By: 1.0 (Android SignApk)
+
+Name: AndroidManifest.xml
+SHA1-Digest: HvCghdba4y1+aPSRkXsLAlsKroQ=
+
+Name: resources.arsc
+SHA1-Digest: NC5609YXAkAADQ0MgEJDz58pxKU=
+
+Name: res/xml/ims_settings.xml
+SHA1-Digest: EOrUcfNsjEVDLnh/XV6bgdDsFm0=
+
+Name: classes.dex
+SHA1-Digest: luCwJgWsUJprdQF/n/lIbKpha6Y=
+
